@@ -13,6 +13,7 @@ namespace Office2Azure
         public static void SaveData(List<Person> lstPerson)
         {
             Console.WriteLine(DateTime.UtcNow.ToString("yyyy-MM-dd-HH-mm:ss") + ":: *******Data insertion started. *******");
+            //Create sql connection
             SqlConnection sqlConn = new SqlConnection(SettingsHelper.AzureDBConnStr);
             try
             { 
